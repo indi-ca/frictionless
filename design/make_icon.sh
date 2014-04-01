@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-SOURCE=frictionless.design.png
+SOURCE=Frictionless-Icon.png
 TARGET=../layouts/osx/frictionless.ukelele.icns
 
 rm -rf Frictionless.iconset
@@ -20,5 +20,5 @@ convert $SOURCE -resize x1024 Frictionless.iconset/icon_512x512@2x.png
 
 iconutil -c icns -o Frictionless.icns Frictionless.iconset
 
-#rm ../layouts/osx/frictionless.ukelele.icns
-mv Frictionless.icns $TARGET
+rm -rf ../layouts/osx/frictionless.ukelele.icns
+mv Frictionless.icns ../layouts/osx/frictionless.ukelele.icns
